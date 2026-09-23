@@ -1,31 +1,45 @@
-<style>
-  
-  @keyframes colorZoom {
-    0% {
-      color: black;
-      transform: scale(1);
-    }
-    50% {
-      color: white;
-      transform: scale(0.9);
-    }
-    100% {
-      color: black;
-      transform: scale(1);
-    }
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page information and styles. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nihal Chahal">
+    <meta name="description" content="Animates a heading by changing its color and scale over a four-second loop.">
+    <title>Basic CSS Animation | Nihal Chahal</title>
 
-  h1 {
-    text-align: center;
-    padding: 20px;
-    
-    animation-name: colorZoom;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
+    <style>
+      /* Define the appearance at the start, midpoint, and end of the animation. */
+        @keyframes colorZoom {
+          0% {
+            color: black;
+            transform: scale(1);
+          }
+          50% {
+            color: white;
+            transform: scale(0.9);
+          }
+          100% {
+            color: black;
+            transform: scale(1);
+          }
+        }
+      
+        /* Apply the repeating four-second animation to the heading. */
+        h1 {
+          text-align: center;
+          padding: 20px;
+          
+          animation-name: colorZoom;
+          animation-duration: 4s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+        }
+    </style>
+  </head>
 
-</style>
-
-
-<h1>Welcome to my Home Page!</h1>
+  <body>
+    <!-- Animates a heading by changing its color and scale over a four-second loop. -->
+    <h1>Welcome to my Home Page!</h1>
+  </body>
+</html>
