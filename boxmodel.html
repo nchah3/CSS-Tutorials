@@ -1,15 +1,29 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page information and styles. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nihal Chahal">
+    <meta name="description" content="Demonstrates content width, padding, borders, and margins on one box.">
+    <title>CSS Box Model | Nihal Chahal</title>
 
-  div {
-    width: 200px;
-    text-align: center;
-    background-color: red;
-    padding: 20px;
-    border: 10px solid black;
-    margin: 100px auto;
-    box-sizing: border-box;
-  }
+    <style>
+      /* With border-box, the 200px width includes padding and borders; auto side margins center the box. */
+        div {
+          width: 200px;
+          text-align: center;
+          background-color: red;
+          padding: 20px;
+          border: 10px solid black;
+          margin: 100px auto;
+          box-sizing: border-box;
+        }
+    </style>
+  </head>
 
-</style>
-
-<div>Hello CSS!</div>
+  <body>
+    <!-- Demonstrates content width, padding, borders, and margins on one box. -->
+    <div>Hello CSS!</div>
+  </body>
+</html>
